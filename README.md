@@ -1,12 +1,35 @@
-﻿<!-- codex-summary:start -->
+<!-- codex-summary:start -->
 # exc
 
 Exercise Scenario
 
-## 프로젝트 개요
+## 구현 기능 요약
 
-- 유형: SAPUI5 애플리케이션
-- 주요 패키지: @sap/ux-ui5-tooling, @ui5/cli
+### App 화면
+
+- 역할: 화면 정보 표시와 사용자 입력 처리
+
+### Detail 화면
+
+- 역할: 화면 정보 표시와 사용자 입력 처리
+
+### Info 화면
+
+- 역할: 업무 명령 실행
+- 주요 항목: Ok
+- 사용자 동작: 팝업 또는 화면 닫기 [onCloseDialog]
+
+### Not Found 화면
+
+- 역할: 화면 정보 표시와 사용자 입력 처리
+
+### Flight Customers 화면
+
+- 역할: 목록 조회 및 항목 선택, 조건 입력 및 값 선택, 상세 정보 표시·편집, 업무 명령 실행
+- 주요 항목: New Customer, Bookings, Create Customer, General Data, Form, Customer Name, Discount, Address Data
+- 사용자 동작: 입력 내용 저장/확정 [onSave], 값 변경 반영 [onCustomerChange], Filter Customers [onFilterCustomers]
+- 처리 내용: 검색 조건으로 목록을 필터링; 팝업/다이얼로그를 열어 추가 입력이나 확인을 처리
+- 주요 기능: 입력 내용 저장/확정, 팝업 또는 화면 닫기, 값 변경 반영, Filter Customers
 
 ## 실행 방법
 
@@ -14,13 +37,6 @@ Exercise Scenario
 npm install
 npm start
 ```
-
-## 주요 구조
-
-- `webapp/`: 애플리케이션 소스
-- `webapp/manifest.json`: 앱 설정, 모델, 데이터 소스 및 라우팅
-- `ui5.yaml`: UI5 Tooling 설정
-- `package.json`: 실행 스크립트와 의존성
 
 <!-- codex-summary:end -->
 
@@ -65,6 +81,3 @@ Exercise Scenario
 #### Pre-requisites:
 
 1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
-
-
-
